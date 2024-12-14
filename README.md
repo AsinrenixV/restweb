@@ -272,9 +272,6 @@ Publish the website in the given URL.
             <button type="submit">Order Now</button>
         </form>
     </section>
-
-   
-
 </body>
 </html>
 ```
