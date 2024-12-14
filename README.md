@@ -79,7 +79,21 @@ Publish the website in the given URL.
 			width:80px;
 
 		}
-        .menu-item {
+        
+		.administration.item {
+			display: inline-block;
+            width: 10%;
+            padding: 10px;
+            margin: 10px;
+            background-color: antiquewhite;
+            border-radius: 3px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.administration.item img {
+			width: 50%;
+            border-radius: 3px;
+		}
+		.menu-item {
             display: inline-block;
             width: 30%;
             padding: 10px;
@@ -120,6 +134,7 @@ Publish the website in the given URL.
         .reservation-form button:hover {
             background-color: #d72b2b;
         }
+		
     </style>
 </head>
 <body>
@@ -134,7 +149,8 @@ Publish the website in the given URL.
         <a href="#menu">Menu</a>
         <a href="#about">About Us</a>
         <a href="#contact">Contact</a>
-        <a href="#reservation">Reservation</a>
+		<a href="#administration">Administration</a>
+		<a href="#reservation">reservation</a>
 	
     </nav>
 	
@@ -231,8 +247,22 @@ Publish the website in the given URL.
         <p>Address: NEW YORK CITY</p>
 		
     </section>
-
-    <section id="reservation" class="section reservation-form">
+	<section id="administration" class="section">
+		<h2>Administration</h2>
+		<div class="administration-item">
+			<img src="chef01.jpeg" alt="best chef1">
+			<h1>CHEF.RAMAN</h1>
+		</div>
+		<div class="administration-item">
+			<img src="chef02.jpeg" alt="best chef2">
+			<h2>CHEF.HARINI</h2>
+		</div>
+		<div class="administration-item">
+			<img src="chef03.jpeg" alt="best chef3">
+			<h3>CHEF.VARSHINI</h3>
+		</div>
+	</section>
+	<section id="reservation" class="section reservation-form">
         <h2>Make your Order</h2>
         <form action="#" method="POST">
             <input type="text" name="name" placeholder="Your Name" required><br>
@@ -250,15 +280,19 @@ Publish the website in the given URL.
 ```
 
 ## OUTPUT:
-![alt text](<renix/restapp/static/Screenshot (44).png>)
-![alt text](<renix/restapp/static/Screenshot (45).png>)
-![alt text](<renix/restapp/static/Screenshot (46).png>)
-![alt text](<renix/restapp/static/Screenshot (47).png>)
-![alt text](<renix/restapp/static/Screenshot (48).png>)
-![alt text](<renix/restapp/static/Screenshot (49).png>)
-![alt text](<renix/restapp/static/Screenshot (50).png>)
-![alt text](<renix/restapp/static/Screenshot (51).png>)
-![alt text](<renix/restapp/static/Screenshot (52).png>)
-![alt text](<renix/restapp/static/Screenshot (53).png>)
+![alt text](<renix/restapp/static/Screenshot (67).png>)
+![alt text](<renix/restapp/static/Screenshot (55).png>)
+![alt text](<renix/restapp/static/Screenshot (56).png>)
+![alt text](<renix/restapp/static/Screenshot (57).png>)
+![alt text](<renix/restapp/static/Screenshot (58).png>)
+![alt text](<renix/restapp/static/Screenshot (59).png>)
+![alt text](<renix/restapp/static/Screenshot (60).png>)
+![alt text](<renix/restapp/static/Screenshot (61).png>)
+![alt text](<renix/restapp/static/Screenshot (62).png>)
+![alt text](<renix/restapp/static/Screenshot (63).png>)
+![alt text](<renix/restapp/static/Screenshot (64).png>)
+![alt text](<renix/restapp/static/Screenshot (65).png>)
+![alt text](<renix/restapp/static/Screenshot (66).png>)
+
 ## RESULT:
 The program for designing software company website using HTML and CSS is completed successfully.
