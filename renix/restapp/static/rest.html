@@ -48,7 +48,21 @@
 			width:80px;
 
 		}
-        .menu-item {
+        
+		.administration.item {
+			display: inline-block;
+            width: 10%;
+            padding: 10px;
+            margin: 10px;
+            background-color: antiquewhite;
+            border-radius: 3px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.administration.item img {
+			width: 50%;
+            border-radius: 3px;
+		}
+		.menu-item {
             display: inline-block;
             width: 30%;
             padding: 10px;
@@ -89,6 +103,7 @@
         .reservation-form button:hover {
             background-color: #d72b2b;
         }
+		
     </style>
 </head>
 <body>
@@ -103,7 +118,8 @@
         <a href="#menu">Menu</a>
         <a href="#about">About Us</a>
         <a href="#contact">Contact</a>
-        <a href="#reservation">Reservation</a>
+		<a href="#administration">Administration</a>
+		<a href="#reservation">reservation</a>
 	
     </nav>
 	
@@ -200,8 +216,22 @@
         <p>Address: NEW YORK CITY</p>
 		
     </section>
-
-    <section id="reservation" class="section reservation-form">
+	<section id="administration" class="section">
+		<h2>Administration</h2>
+		<div class="administration-item">
+			<img src="chef01.jpeg" alt="best chef1">
+			<h1>CHEF.RAMAN</h1>
+		</div>
+		<div class="administration-item">
+			<img src="chef02.jpeg" alt="best chef2">
+			<h2>CHEF.HARINI</h2>
+		</div>
+		<div class="administration-item">
+			<img src="chef03.jpeg" alt="best chef3">
+			<h3>CHEF.VARSHINI</h3>
+		</div>
+	</section>
+	<section id="reservation" class="section reservation-form">
         <h2>Make your Order</h2>
         <form action="#" method="POST">
             <input type="text" name="name" placeholder="Your Name" required><br>
