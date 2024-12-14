@@ -276,7 +276,7 @@ Publish the website in the given URL.
 </html>
 ```
 
-## OUTPUT:
+## OUTPUT
 ![alt text](<renix/restapp/static/Screenshot (67).png>)
 ![alt text](<renix/restapp/static/Screenshot (55).png>)
 ![alt text](<renix/restapp/static/Screenshot (56).png>)
