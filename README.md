@@ -277,19 +277,19 @@ Publish the website in the given URL.
 ```
 
 ## OUTPUT
-![alt text](<renix/restapp/static/Screenshot (67).png>)
-![alt text](<renix/restapp/static/Screenshot (55).png>)
-![alt text](<renix/restapp/static/Screenshot (56).png>)
-![alt text](<renix/restapp/static/Screenshot (57).png>)
-![alt text](<renix/restapp/static/Screenshot (58).png>)
-![alt text](<renix/restapp/static/Screenshot (59).png>)
-![alt text](<renix/restapp/static/Screenshot (60).png>)
-![alt text](<renix/restapp/static/Screenshot (61).png>)
-![alt text](<renix/restapp/static/Screenshot (62).png>)
-![alt text](<renix/restapp/static/Screenshot (63).png>)
-![alt text](<renix/restapp/static/Screenshot (64).png>)
-![alt text](<renix/restapp/static/Screenshot (65).png>)
-![alt text](<renix/restapp/static/Screenshot (66).png>)
+![alt text](<Screenshot (67).png>)
+![alt text](<Screenshot (55).png>)
+![alt text](<Screenshot (56).png>)
+![alt text](<Screenshot (57).png>)
+![alt text](<Screenshot (58).png>)
+![alt text](<Screenshot (59).png>)
+![alt text](<Screenshot (60).png>)
+![alt text](<Screenshot (61).png>)
+![alt text](<Screenshot (62).png>)
+![alt text](<Screenshot (63).png>)
+![alt text](<Screenshot (64).png>)
+![alt text](<Screenshot (65).png>)
+![alt text](<Screenshot (66).png>)
 
 ## RESULT:
 The program for designing software company website using HTML and CSS is completed successfully.
