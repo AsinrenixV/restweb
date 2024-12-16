@@ -1,0 +1,442 @@
+
+body {
+    font-family: sans-serif;
+    background-color: white;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    padding: 2%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 12px 15px;
+    flex: 1;
+    list-style-type: none;
+    position: relative;
+    text-align: right;
+    padding: 12px 24px;
+    padding-bottom: 0;
+    transition: 0.5s;
+}
+
+nav ul li a {
+    color: rgb(202, 143, 41);
+    font-size: 28px;
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: black;
+    display: block;
+    transition: 0.2s linear;
+}
+
+nav ul :hover {
+    transform: scale(1.3);
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+
+
+nav h1 {
+    font-size: 32px;
+    color: rgb(117, 202, 228);
+    margin: 0 5px;
+    cursor: pointer;
+    margin-left: -175%;
+    transition: 0.5s;
+}
+
+nav h1:hover {
+    color: black;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 130px;
+}
+
+.main .text h1 {
+    font-size: 60px;
+    position: relative;
+    top: -90px;
+    left: 20px;
+}
+
+.main .text h1 span {
+    margin-left: 15px;
+    color: rgb(181, 119, 53);
+    font-family: Papyrus;
+    line-height: 1.5;
+    font-size: 70px;
+}
+
+.main .homeimg img {
+    width: 650px;
+    position: relative;
+    right: 10%;
+    margin-top: -20%;
+    margin-left: 10%;
+    transition: 0.5s;
+}
+
+.main .homeimg :hover {
+    transform: scale(1.1);
+}
+
+.order_btn {
+    background: #9e988c;
+    padding: 15px 18px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    left: 1.5%;
+    top: 50px;
+    transition: 0.5s;
+}
+
+.btn :hover {
+    color: rgb(250, 192, 49);
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    text-align: center;
+    margin-top: 10%;
+    background-color: rgba(208, 167, 199, 0.5);
+    color: black;
+    font-family: "Nunito", sans-serif;
+    font-size: 28px;
+}
+
+footer i {
+    margin: 0 5px;
+    transition: 0.5s;
+    color: red;
+}
+
+footer i:hover {
+    color: yellow;
+    transform: scale(1.2);
+}
+
+/*about*/
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.h1 h1 {
+    font-size: 60px;
+    position: relative;
+    left: 7%;
+}
+
+.h1 h1 span {
+    margin-left: 15px;
+    color: rgb(250, 192, 49);
+    font-family: Papyrus;
+    line-height: 1.5;
+    font-size: 70px;
+}
+
+.about .abtimg img {
+    width: 400px;
+    position: relative;
+    right: 20%;
+    margin-top: -20%;
+    transition: 0.5s;
+}
+
+.about .abtimg :hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.abt1 h2 {
+    margin-left: 10%;
+    font-size: 42px;
+}
+
+.about .abt1 p {
+    font-size: 24px;
+    width: 80%;
+    margin-left: 10%;
+    line-height: 1.5;
+    word-spacing: 10px;
+}
+
+.homeh {
+    font-size: 32px;
+    color: rgb(250, 192, 49);
+    margin: 0 5px;
+    cursor: pointer;
+    margin-left: -10%;
+    transition: 0.5s;
+}
+
+.homeh :hover {
+    color: black;
+}
+
+.abtfo {
+    margin-top: 5%;
+}
+/* Admin*/
+.team {
+    width: 100%;
+    padding: 70px 0;
+    height: 90vh;
+    margin: auto;
+}
+
+.team h1 {
+    margin-left: 15%;
+    justify-content: left;
+    align-items: left;
+    font-size: 60px;
+    margin-top: -2%;
+}
+
+h3 {
+    margin-left: 22%;
+}
+
+.team h1 span {
+    color: burlywood;
+    margin-left: 15px;
+    font-family: mv boli;
+}
+.admin {
+    display: flex;
+}
+.admins {
+    width: 300px;
+    display: flex;
+    height: 400px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10%;
+    padding: 10px 12px;
+    margin: 0 8px;
+    justify-content: center;
+    text-align: center;
+}
+
+.admins .admininfo .imgad {
+    transition: 0.5s;
+}
+.admininfo .imgad img {
+    transition: 0.5s;
+}
+.admininfo .imgad :hover {
+    transform: scale(1.4);
+}
+.admininfo p {
+    font-size: 18px;
+}
+.admins img {
+    width: 200px;
+    border-radius: 100%;
+    margin-top: 20%;
+}
+.admins h3 {
+    font-size: 20px;
+    margin-bottom: 50%;
+    color: #69552f;
+}
+.admf{
+    margin-top: -17%;
+}
+/*-----------------*/
+.chefad {
+    display: flex;
+}
+
+
+.chef {
+    width: 90%;
+    margin-top: 12%;
+    display: grid;
+    margin-left: -40%;
+    grid-template-columns: 330px 330px 330px;
+    grid-template-rows: 220px;
+}
+
+.chefs {
+    width: 270px;
+    height: 170px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10%;
+    padding: 10px 12px;
+    margin-left: 30px; 
+}
+
+.chefs img {
+    display: flex;
+    transition: 0.5s;
+    justify-content: center;
+    width: 150px;
+    border-radius: 100%;
+    margin-left: 20%; 
+}
+
+.chef .chefs:hover img {
+    opacity: 0.4;
+}
+.chefs h1 {
+    position: absolute;
+    font-size: 28px;
+    font-family: "Nunito",sans-serif;
+    margin-bottom: 130px;
+    color: #292136;
+    font-family: polo;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.chefs:hover h1 {
+    opacity: 2;
+    transform: translateY(-100px);
+}
+
+
+/*Order*/
+.book {
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.book h1 span {
+    color: #c27250;
+    margin-left: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bookimg img {
+    width: 400px;
+    height: 500px;
+    transition: 0.5s;
+    margin-top: -3%;
+}
+.bimg :hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.book h1 {
+    font-size: 48px;
+}
+.order {
+    line-height: 2;
+    justify-content: right;
+    margin-top: 8%;
+    margin-left: 7%;
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 30px;
+}
+.inp {
+    font-size: 32px;
+}
+input, select {
+    font-size: 32px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: black;
+}
+.submit {
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    background-color: #6fcc68;
+    cursor: pointer;
+    margin-left: 50%;
+    margin-top: 2%;
+}
+.conf {
+    margin-top: 2%;
+}
+
+/*Menu*/
+.menubar{
+    width: 90%;
+    margin: auto;
+    padding: auto;
+}
+.indian, .fast, .other{
+    display: flex;    
+}
+.ind, .fastt, .otherr{
+    background-color: peachpuff;
+    margin: 25px;
+    width: 400px;
+    transition: 0.5s;
+    border-radius: 25px;
+}
+.ind:hover, .fastt:hover, .otherr:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.menubar h1{
+    font-family: "Papyrus";
+    color: #d15c87;
+    font-size: 48px;
+}
+.menubar img{
+    width: 250px;
+    height: 250px;
+    padding: 25px;
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+    margin-left: 4%;
+}
+.menubar h2{
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+    width: 80%;
+}
+.menubar p{
+    font-size: 15px;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+.view img{
+    opacity: 0.3;
+}
+.view h3{
+    font-size: 20px;
+    margin-left: 40%;
+    cursor: pointer;
+}

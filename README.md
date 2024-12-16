@@ -1,5 +1,5 @@
 # Ex.07 Restaurant Website
-## Date:14-12-2024
+## Date:16-12-2024
 
 ## AIM:
 To develop a static Restaurant website to display the food items and services provided by them.
@@ -29,267 +29,447 @@ Publish the website in the given URL.
 
 ## PROGRAM:
 ```
+home.html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Welcome to Rovarsinn restaurant</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color:aliceblue;
-			;
+    <title>Rovarsinn restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 
-        }
-        header {
-            background-image:url('rest.png');
-		    font-style:italic;
-			color:beige;
-            text-align: center;
-            padding: 200px 0px;
-			background-repeat: no-repeat;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #130505;
-        }
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-        }
-        nav a:hover {
-            background-color: #a9a5ab;
-        }
-        .section {
-            padding: 20px;
-            text-align: center;
-        }
-		.designer {
-			position: absolute;
-			bottom:40px;
-			right:35px;
-			width:80px;
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Lobster&family=Orbitron:wght@400..900&family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Lobster&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Lobster&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Oswald&family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
 
-		}
-        
-		.administration.item {
-			display: inline-block;
-            width: 10%;
-            padding: 10px;
-            margin: 10px;
-            background-color: antiquewhite;
-            border-radius: 3px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		}
-		.administration.item img {
-			width: 50%;
-            border-radius: 3px;
-		}
-		.menu-item {
-            display: inline-block;
-            width: 30%;
-            padding: 10px;
-            margin: 10px;
-            background-color: antiquewhite;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	
-        }
-        .menu-item img {
-            width: 100%;
-            border-radius: 8px;
-        }
-        .footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        .reservation-form input, .reservation-form textarea {
-            width: 80%;
-            padding: 10px;
-            margin: 10px;
-            border-radius: 4px;
-            border: 1px solid #ccc;
-        }
-        .reservation-form button {
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .reservation-form button:hover {
-            background-color: #d72b2b;
-        }
-		
-    </style>
+<body>
+    <nav>
+        <div class="links">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="admin.html">Administration</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="text">
+            <h1>GET <span>HOMELY FOODS </span>IN SECONDS</h1>
+        </div>
+        <div class="homeimg">
+            <img src="rest4.jpeg" alt="">
+        </div>
+    </div>
+    <div class="btn">
+        <a href="contact.html" class="order_btn">BOOK NOW</a>
+    </div>
+    <footer>
+        Designed with <i class="fa-regular fa-heart"></i> by ASIN RENIX V &copy;
+    </footer>
+</body>
+</html>
+about.html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us ~ Rovarsinn restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Lobster&family=Orbitron:wght@400..900&family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Lobster&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Lobster&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Oswald&family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
 </head>
 <body>
+    <nav>
+        </div>
+        <div class="links1">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="admin.html">Administration</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="h1">
+        <h1><span class="abt">ABOUT </span>US </h1></div>
+    <div class="about">
+        
+        <div class="abt1">
+            <h2>Why Us!?</h2>
+            <p>Rovarsinn restaurant is a unique culinary destination that offers a diverse range of dining experiences. From the comfort of home-style Indian cuisine to the exotic flavors of international dishes, there's something for everyone. The restaurant boasts a separate section dedicated to authentic Indian delicacies, served in traditional style with a focus on regional specialties. For those seeking quick bites, the fast-food section offers a variety of tempting options. The presence of a world-class chef ensures that every dish is a masterpiece, elevating the dining experience without breaking the bank. Beyond the food, Rovarsinn restaurant provides a fun and relaxing atmosphere with games and chill zones, making it a perfect spot for families and friends to unwind.
+            </p>
+        </div>
 
-    <header>
-        <h1>Rovarsinn Restaurant</h1>
-        <p>Where every meal is a delight!</p>
-    </header>
+        <div class="abtimg">
+            <img src="restuarant.jpg" alt="">
+        </div>
+        <p></p>
+    </div>
+    <footer class="abtfo">
+        Designed with  <i class="fa-regular fa-heart"></i> by ASIN RENIX V &copy;
+    </footer>
+</body>
+</html>
+
+admin.html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration ~ Rovarsinn restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Lobster&family=Orbitron:wght@400..900&family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Lobster&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Lobster&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Oswald&family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="admin.html">Administration</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Book now</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="chefad">
+        <div class="team">
+            <h1>Meet <span>Our Team!!!</span></h1>
+
+            <div class="admin">
+                <div class="admins">
+                    <div class="admininfo">
+                        <div class="imgad">
+                            <img src="thalapathy.jpg" alt="">
+                        </div>
+                        <h3>THALAPATHY VIJAY</h3>
+                    </div>
+                    </div>    
+                            <div class="admins">
+                                <div class="admininfo">
+                                    <div class="imgad">
+                                        <img src="ajith.jpg" alt="">
+                                        </div>
+                                        <h3>AJITH</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        <div class="chef">
+            
+            <div class="chefs">
+                <img src="damu.jpg" class="imgg " alt="">
+                <h1>Chef Damu</h1>
+            </div>
+
+            <div class="chefs">
+                <img src="venkatesh.jpg" alt="">
+                <h1>Chef Venkatesh Bhat</h1>
+            </div>
+        </div>
+    </div>
+    <footer class="admf">
+        Designed with <i class="fa-regular fa-heart"></i> by ASIN RENIX V &copy;
+    </footer>
+</body>
+
+</html>
+
+menu.html
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rovarsinn restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Lobster&family=Orbitron:wght@400..900&family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Lobster&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Lobster&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Oswald&family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
 
     <nav>
-        <a href="#home">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact</a>
-		<a href="#administration">Administration</a>
-		<a href="#reservation">reservation</a>
-	
+        
+        <div class="links">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="admin.html">Administration</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Book Now</a></li>
+            </ul>
+        </div>
     </nav>
-	
-
-    <section id="home" class="section">
-        <h2>WELCOME TO ROVARSINN RESTAURANT!!!</h2>
-        <p>Discover the finest dining experience with exquisite flavors,exceptional service,and a warm atmosphere that will leave you wanting more</p>
-    </section>
-
-    <section id="menu" class="section">
-        <h2>Our Delicious Food Menu</h2>
-        <div class="menu-item">
-            <img src="cheeseburger.jpeg" alt="Dish 1">
-            <h1>Cheese Burger</h1>
-            <p>Melted cheese and caramelized onions on a toasted bun..</p>
-            <p>$15.99</p>
+    <div class="menubar">
+        <h1>Delicious Food!</h1>
+        <div class="indian">
+            
+            <div class="ind">
+                <img src="butterchickenrice.jpeg" alt="">
+                <h2>BUTTER CHICKEN - ₹200</h2>
+                <p>"Indulge in a symphony of flavors with our diverse Butter chicken selection."</p>
+            </div>
+            <div class="ind">
+                <img src="dosa.jpeg" alt="">
+                <h2>Mini South Indian Tiffin - ₹100</h2>
+                <p>"A mini feast of South Indian flavors."</p>
+            </div>
+            <div class="ind">
+                <img src="cheeseburger.jpeg" alt="">
+                <h2>CHEESE BURGER- ₹175</h2>
+                <P>"Experience the magic of Cheese burger, our way."</P>
+            </div>
+            <div class="ind">
+                
+                <div class="view">
+                <img src="applejuice.jpeg" alt="">
+                <h3>View All</h3>
+                </div>
+                
+            </div>
         </div>
-		<div class="menu-item">
-			<img src="butterchickenrice.jpeg" alt="Dish 2">
-			<h2>Butter Chicken Rice</h2>
-			<p>Treat yourself to a fragrant and irresistible Butter Chicken Rice experience,discover the ultimate comfort food with our creamy and savory Butter Chicken Rice...</p>
-			<p>$16</p>
-		</div>
-		<div class="menu-item">
-			<img src="italianpasta.jpeg" alt="Dish 3">
-			<h3>Italian Pasta</h3>
-			<p>Try it which was topped with spicy and hot spices that gives you crunchy taste...</p>
-			<p>$32</p>
-		</div>
-		<div class="menu-item">
-			<img src="pastasweetycherry.jpeg" alt="Dish 4">
-			<h4>Pasta Sweety Cherry</h4>
-			<p>Explore the Delicious Sweety pasta dish that gives you such a sweet taste....take it eat it..</p>
-			<p>$22</p>
-		</div>
-		<div class="menu-item">
-			<img src="applejuice.jpeg" alt="Dish 5">
-			<h5>Apple Juice</h5>
-			<p>FFresh juice made from fresh apples...</p>
-			<p>$13</p>
-		</div>
-		<div class="menu-item">
-            <img src="spicychicken.jpg" alt="Dish 6">
-            <h6>Spicy Chicken</h6>
-            <p>Feel the heat with our blazing hot chicken scorching hot and full of flavor fiery spices and savory flavors come together in our spicy chicken...</p>
-            <p>$20.99</p>
+        <h1>Fast foods</h1>
+        <div class="fast">
+            <div class="fastt">
+                <img src="lazyburgerpizza.jpeg" alt="">
+                <h2>Burger - ₹90</h2>
+                <p>"Discover a burger for every craving."</p>
+            </div>
+            <div class="fastt">
+                <img src="nuggets.jpg" alt="">
+                <h2>NUGGETS - ₹90</h2>
+                <p>"Elevate your fry game with our unique flavors."</p>
+            </div>
+            <div class="fastt">
+                <img src="cocktails.jpeg" alt="">
+                <h2>COCKTAILS - ₹120</h2>
+                <p>"A slice of heaven, every time."</p>
+            </div>
+            <div class="fastt">
+                <div class="view">
+                <img src="italianpasta.jpeg" alt="">
+                
+                <h3>View All</h3></div>
+            </div>
         </div>
-        <div class="menu-item">
-            <img src="nuggets.jpg" alt="Dish 7">
-            <h1>Nuggets</h1>
-            <p>Tender and flavorful nuggets, cooked to perfection spicy and savory nuggets that will leave you wanting more golden and crunchy nuggets, perfect for snacking...</p>
-            <p>$12.99</p>
+        <h1>Yummyyy!!!</h1>
+        <div class="other">
+            <div class="otherr">
+                <img src="mochafrosting.jpeg" alt="">
+                <h2>MOCHA FROSTING - ₹250</h2>
+                <p>"Take your way to flavor town."</p>
+            </div>
+            <div class="otherr">
+                <img src="pastasweetycherry.jpeg" alt="">
+                <h2>PASTA - ₹275</h2>
+                <p>"Pastry paradise."</p>
+            </div>
+            <div class="otherr">
+                <img src="spicychicken.jpg" alt="">
+                <h2>SPICY CHICKEN - ₹300</h2>
+                <p>"Shrimply delicious."</p>
+            </div>
+            <div class="otherr">
+                <div class="view">
+                <img src="lugerburger.jpeg" alt="">
+                <h3>View All</h3>
+                </div>
+            </div>
         </div>
-		<div class="menu-item">
-			<img src="cocktails.jpeg" alt="Dish 8">
-			<h2>Cocktails</h2>
-			<p>Treat yourself to a sophisticated and elegant cocktail experience..</p>
-			<p>$19</p>
-		</div>
-		<div class="menu-item">
-			<img src="lugerburger.jpeg" alt="Dish 9">
-			<h3>Luger Burger</h3>
-			<p>Treat yourself to a decadent and satisfying Luger Burger experience discover the ultimate comfort food with our hearty Luger Burger...</p>
-			<p>$12</p>
-		</div>
-		<div class="menu-item">
-			<img src="mochafrosting.jpeg" alt="Dish 10">
-			<h4>Mocha Frosting</h4>
-			<p>Decadent and creamy, our mocha frosting is the perfect treat experience the velvety smoothness of our mocha frosting...</p>
-			<p>$13</p>
-		</div>
-		<div class="menu-item">
-			<img src="dosa.jpeg" alt="Dish 11">
-			<h5>Dosa</h5>
-			<p>Don't forget to taste the crunchy dosa with such spicy chatniii...</p>
-			<p>$10</p>
-		</div>
-		<div class="menu-item">
-			<img src="lazyburgerpizza.jpeg" alt="Dish 12">
-			<h6>Lazy burger pizza</h6>
-			<p>Get ready for a flavor explosion with our hot and melty Lazy Baker Pizza..</p>
-			<p>$13</p>
-		</div>
-    </section>
+    </div>
 
-    <section id="about" class="section">
-        <h2>About Us</h2>
-        <p>Rovarsinn restaurant is an establishment that prepares and serves food and drinks to customers.Meals are generally served and eaten on the premises, but many restaurants also offer take-out and food delivery services. Restaurants vary greatly in appearance and offerings, including a wide variety of cuisines and service models ranging from inexpensive fast-food restaurants and cafeterias to mid-priced family restaurants, to high-priced luxury establishments.</p>
+    <footer>
+        Designed with <i class="fa-regular fa-heart"></i> by ASIN RENIX V &copy;
+    </footer>
+</body>
+</html>
 
-    <section id="contact" class="section">
-        <h2>Contact us for Delicious food</h2>
-        <p>Email: Rovarsinnrest@gmail.com</p>
-        <p>Phone: 7390034679</p>
-        <p>Address: NEW YORK CITY</p>
-		
-    </section>
-	<section id="administration" class="section">
-		<h2>Administration</h2>
-		<div class="administration-item">
-			<img src="chef01.jpeg" alt="best chef1">
-			<h1>CHEF.RAMAN</h1>
-		</div>
-		<div class="administration-item">
-			<img src="chef02.jpeg" alt="best chef2">
-			<h2>CHEF.HARINI</h2>
-		</div>
-		<div class="administration-item">
-			<img src="chef03.jpeg" alt="best chef3">
-			<h3>CHEF.VARSHINI</h3>
-		</div>
-	</section>
-	<section id="reservation" class="section reservation-form">
-        <h2>Make your Order</h2>
-        <form action="#" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required><br>
-            <input type="email" name="email" placeholder="Your Email" required><br>
-            <input type="number" name="phone" placeholder="Your Phone Number" required><br>
-            <textarea name="message" placeholder="Special Requests" rows="4"></textarea><br>
-            <button type="submit">Order Now</button>
-        </form>
-    </section>
+contact.html
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us ~ Rovarsinn restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Lobster&family=Orbitron:wght@400..900&family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Lobster&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Lobster&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Oswald&family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="admin.html">Administration</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="book">
+        
+        <div class="bookimg">
+            <h1><span>Order</span> Now</h1>
+            <div class="bimg">
+            <img src="cheeseburger.jpeg" alt=""></div>
+        </div>
+        <div class="order">
+            <form>
+                <div class="inp">
+                    <label> Enter Your Name:</label><br>
+                    <input type="text" minlength="3" placeholder="Enter Name" required>
+                </div>
+                <div class="inp">
+                    <label> Enter Your Mobile Number:</label><br>
+                    <input type="text" minlength="10" maxlength="10" placeholder="Enter Mobile No." required>
+                </div>
+                <div class="inp">
+                    <label> Enter Your Email:</label><br>
+                    <input type="email" placeholder="Enter email">
+                </div>
+                <div class="inp">
+                    <label> Enter tables to be booked:</label><br>
+                    <input type="number" placeholder="Enter no. of tables" required>
+                </div>
+                <div class="inp">
+                    <label>Select Date</label><br>
+                    <select name="Date" required>
+                        <option value="16-12-2024">16-12-2024</option>
+                        <option value="17-12-2024">17-12-2024</option>
+                        <option value="18-12-2024">18-12-2024</option>
+                        <option value="19-12-2024">19-12-2024</option>
+                        <option value="20-12-2024">20-12-2024</option>
+                    </select>
+                </div>
+                <div class="inp">
+                    <label>Select Time</label><br>
+                    <select name="Date" required>
+                        <option value="1PM">1PM</option>
+                        <option value="2PM">2PM</option>
+                        <option value="3PM">3PM</option>
+                        <option value="7PM">7PM</option>
+                        <option value="9PM">9PM</option>
+                    </select>
+                </div>
+                <div class="sub">
+                <input type="submit" class ="submit" value="Book">
+                    </div>
+
+            </form>
+        </div>
+    </div>
+
+    <footer class="conf">
+        Designed with <i class="fa-regular fa-heart"></i> by ASIN RENIX V &copy;
+    </footer>
 </body>
 </html>
 ```
 
-## OUTPUT
-![alt text](<Screenshot (67).png>)
-![alt text](<Screenshot (55).png>)
-![alt text](<Screenshot (56).png>)
-![alt text](<Screenshot (57).png>)
-![alt text](<Screenshot (58).png>)
-![alt text](<Screenshot (59).png>)
-![alt text](<Screenshot (60).png>)
-![alt text](<Screenshot (61).png>)
-![alt text](<Screenshot (62).png>)
-![alt text](<Screenshot (63).png>)
-![alt text](<Screenshot (64).png>)
-![alt text](<Screenshot (65).png>)
-![alt text](<Screenshot (66).png>)
+## OUTPUT:
+
+![alt text](<renix/restapp/static/Screenshot (75).png>)
+![alt text](<renix/restapp/static/Screenshot (76).png>)
+![alt text](<renix/restapp/static/Screenshot (77).png>)
+![alt text](<renix/restapp/static/Screenshot (79).png>)
+![alt text](<renix/restapp/static/Screenshot (80).png>)
+![alt text](<renix/restapp/static/Screenshot (81).png>)
+![alt text](<renix/restapp/static/Screenshot (83).png>)
+![alt text](<renix/restapp/static/Screenshot (85).png>)
 
 ## RESULT:
 The program for designing software company website using HTML and CSS is completed successfully.
